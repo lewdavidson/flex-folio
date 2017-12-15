@@ -4,17 +4,17 @@
 // menu cross btn
 
 .expand-btn {
+  margin-right: 10px;
   position: relative;
   border-radius: 4px;
   height: $x-length + ($x-pad * 2);
   width:  $x-length + ($x-pad * 2);
-  margin-right: 15px;
   transition: transform .5s ease;
 }
 
 .x-btn {
   box-sizing: border-box;
-  background: $plum;
+  background: $dark;
   position: absolute;
 }
 .x-vert {
@@ -38,11 +38,14 @@
  #hero-btn {
    align-self: center;
    justify-content: flex-end;
-   margin-top: 50px;
-   height: 44px;
-   width: 120px;
-   background-color: $white;
+   margin-top: 15px;
+   height: 26px;
+   width: 90px;
+   background-color: $pink;
+   color: $dark;
+   font-weight: bold;
    border-radius: 4px;
+   border: 1px solid $dark;
    font-size: 1em;
    font-family: $body-font;
  }

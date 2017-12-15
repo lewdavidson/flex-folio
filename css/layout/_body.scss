@@ -1,19 +1,21 @@
 .hero {
   height: 30vh;
-  background: url("../img/hero.png") center no-repeat;
+  background: url("../img/hero.png")
+  center no-repeat;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   background-size: cover;
   .hero-content {
-    color: $white;
+    color: lighten($grey, 20%);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
-    font-size: .8em;
+    padding: 20px;
+    font-size: .6em;
     padding-top: 55px;
     font-family: $body-font;
     h2 {
@@ -26,6 +28,7 @@
 .gallery-head {
   margin: 40px;
   text-align: center;
+  font-family: $body-font;
 }
 
 .gallery-container {
@@ -34,7 +37,8 @@
   justify-content: center;
   margin: 20px;
   .gallery-item {
-    height: 30vh;
+    height: 305px;
+    width: 305px;
     max-width: 350px;
     object-fit: cover;
     margin: 20px;
@@ -56,8 +60,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  height: 35vh;
+  height: 68vh;
   width: 100%;
+  padding: 10px;
   .info {
     width: 100%;
   }
@@ -65,6 +70,8 @@
     line-height: 35px;
     li {
       text-align: center;
+      padding: 10px;
+      width: 100%;
     }
   }
   #profile {
@@ -76,7 +83,7 @@
 }
 
 .contact-head {
-  margin-top: 50px;
+  margin-top: 35px;
   display: flex;
   justify-content: center;
   img {
@@ -88,9 +95,10 @@
 .contact-body {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   label {
-    margin-right: 5px;
+    margin-right: 2px;
     margin-top: 4px;
     margin-left: 10px;
   }
@@ -99,15 +107,35 @@
     border-radius: 4px;
     width: 230px;
     margin: 5px;
+    margin-right: 5px;
     margin-bottom: 10px;
   }
   textarea {
     border: 2px solid $black;
     border-radius: 4px;
-    margin: 10px;
+    margin-top: 5px;
+    margin-left: 15px;
   }
+}
 
-  #send {
-
+.send-animation {
+  position: relative;
+  width: 100%;
+  height: 5vh;
+  #clicky {
+    position: absolute;
+    right: 28%;
+    top: 27%;
+    font-size: 13px;
+  }
+  .send {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 11%;
+    transition: right .45s ease;
+  }
+  .sent {
+    right: 80%;
   }
 }

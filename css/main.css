@@ -412,7 +412,8 @@ h1, h2 {
   margin: 0; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -501,44 +502,49 @@ header {
   position: relative; }
 
 .nav-bar {
-  background-color: #4C5760;
-  color: #32021F;
+  background-color: #FFCDB2;
+  color: #0A100D;
   width: 100%;
-  height: 50px;
+  height: 35px;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: space-around;
+  align-items: center;
+  position: relative; }
   .nav-bar .logo {
     display: flex;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-left: 18px; }
     .nav-bar .logo #cat {
       height: 15%;
       width: 13%;
       padding: 5px;
       margin-right: 6px;
-      animation: cat 3s infinite; }
+      animation: cat 1.5s infinite; }
     .nav-bar .logo .name {
       font-size: 1em; }
 
 @keyframes cat {
-  from {
-    transform: rotate(-1deg);
+  0% {
+    transform: rotate(-2deg);
     animation-timing-function: ease-in; }
-  to {
-    transform: rotate(1.5deg);
+  50% {
+    transform: rotate(3deg);
+    animation-timing-function: ease-out; }
+  100% {
+    transform: rotate(-2deg);
     animation-timing-function: ease-out; } }
 .hidden-menu {
+  z-index: 40;
   background-color: #000000;
-  opacity: 0.9;
   height: 108px;
   width: 100%;
-  color: #FFFFFF;
+  color: #FFCDB2;
   font-family: "Raleway", sans-serif;
   font-size: 0.9em;
   position: absolute;
-  top: -128px;
+  top: -113px;
   transition: 1s ease-in-out; }
   .hidden-menu ul {
     margin: 0;
@@ -546,29 +552,30 @@ header {
     display: block; }
     .hidden-menu ul li {
       border-bottom: 1px solid #FFFFFF;
-      padding-left: 15px;
+      padding-left: 25px;
       line-height: 35px; }
 
 .menu-show {
-  top: 50px;
+  top: 35px;
   width: 100%; }
 
 .hero {
   height: 30vh;
   background: url("../img/hero.png") center no-repeat;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   background-size: cover; }
   .hero .hero-content {
-    color: #FFFFFF;
+    color: #7b8a97;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
-    font-size: .8em;
+    padding: 20px;
+    font-size: .6em;
     padding-top: 55px;
     font-family: "Raleway", sans-serif; }
     .hero .hero-content h2 {
@@ -576,7 +583,8 @@ header {
 
 .gallery-head {
   margin: 40px;
-  text-align: center; }
+  text-align: center;
+  font-family: "Raleway", sans-serif; }
 
 .gallery-container {
   display: flex;
@@ -584,7 +592,8 @@ header {
   justify-content: center;
   margin: 20px; }
   .gallery-container .gallery-item {
-    height: 30vh;
+    height: 305px;
+    width: 305px;
     max-width: 350px;
     object-fit: cover;
     margin: 20px;
@@ -603,14 +612,17 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  height: 35vh;
-  width: 100%; }
+  height: 68vh;
+  width: 100%;
+  padding: 10px; }
   .about-container .info {
     width: 100%; }
   .about-container ul {
     line-height: 35px; }
     .about-container ul li {
-      text-align: center; }
+      text-align: center;
+      padding: 10px;
+      width: 100%; }
   .about-container #profile {
     border-radius: 50%;
     border: 2px solid #000000;
@@ -618,7 +630,7 @@ header {
     height: 230px; }
 
 .contact-head {
-  margin-top: 50px;
+  margin-top: 35px;
   display: flex;
   justify-content: center; }
   .contact-head img {
@@ -629,9 +641,10 @@ header {
 .contact-body {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center; }
   .contact-body label {
-    margin-right: 5px;
+    margin-right: 2px;
     margin-top: 4px;
     margin-left: 10px; }
   .contact-body input {
@@ -639,23 +652,43 @@ header {
     border-radius: 4px;
     width: 230px;
     margin: 5px;
+    margin-right: 5px;
     margin-bottom: 10px; }
   .contact-body textarea {
     border: 2px solid #000000;
     border-radius: 4px;
-    margin: 10px; }
+    margin-top: 5px;
+    margin-left: 15px; }
+
+.send-animation {
+  position: relative;
+  width: 100%;
+  height: 5vh; }
+  .send-animation #clicky {
+    position: absolute;
+    right: 28%;
+    top: 27%;
+    font-size: 13px; }
+  .send-animation .send {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 11%;
+    transition: right .45s ease; }
+  .send-animation .sent {
+    right: 80%; }
 
 .expand-btn {
+  margin-right: 10px;
   position: relative;
   border-radius: 4px;
   height: 26px;
   width: 26px;
-  margin-right: 15px;
   transition: transform .5s ease; }
 
 .x-btn {
   box-sizing: border-box;
-  background: #32021F;
+  background: #0A100D;
   position: absolute; }
 
 .x-vert {
@@ -678,11 +711,14 @@ header {
 #hero-btn {
   align-self: center;
   justify-content: flex-end;
-  margin-top: 50px;
-  height: 44px;
-  width: 120px;
-  background-color: #FFFFFF;
+  margin-top: 15px;
+  height: 26px;
+  width: 90px;
+  background-color: #FFCDB2;
+  color: #0A100D;
+  font-weight: bold;
   border-radius: 4px;
+  border: 1px solid #0A100D;
   font-size: 1em;
   font-family: "Raleway", sans-serif; }
 
