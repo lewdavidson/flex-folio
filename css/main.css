@@ -516,7 +516,7 @@ body {
       font-size: 1em; }
 
 .hero {
-  height: 50vh;
+  height: 40vh;
   background: url("../img/hero.png") center no-repeat;
   display: flex;
   justify-content: center; }
@@ -530,8 +530,21 @@ body {
     text-align: center;
     padding: 10px;
     font-size: .8em;
-    padding-top: 35px;
-    font-family: "Raleway", sans-serif; }
+    padding-top: 55px;
+    font-family: "Raleway", sans-serif;
+    position: relative; }
+    .hero .hero-content h2 {
+      margin-top: 15px; }
+    .hero .hero-content #hero-btn {
+      position: absolute;
+      top: 55%;
+      left: 32%;
+      height: 50px;
+      width: 130px;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      font-size: 1em;
+      font-family: "Raleway", sans-serif; }
 
 .expand-btn {
   position: relative;
