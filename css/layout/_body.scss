@@ -1,0 +1,19 @@
+.hero {
+  height: 50vh;
+  background: url("../img/hero.png") center no-repeat;
+  display: flex;
+  justify-content: center;
+  .hero-content {
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: .8em;
+    padding-top: 35px;
+    font-family: $body-font;
+  }
+}

@@ -1,3 +1,33 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+// menu cross btn
+
+.expand-btn {
+  position: relative;
+  border-radius: 4px;
+  height: $x-length + ($x-pad * 2);
+  width:  $x-length + ($x-pad * 2);
+  margin-right: 5px;
+  transition: transform .5s ease;
+}
+
+.x-btn {
+  box-sizing: border-box;
+  background: $plum;
+  position: absolute;
+}
+.x-vert {
+  height: $x-length;
+  width: $x-thickness;
+  top: $x-pad;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.x-horiz {
+  height: $x-thickness;
+  width: $x-length;
+  left: $x-pad;
+  top: 50%;
+  transform: translateY(-50%);
+}
