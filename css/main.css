@@ -516,10 +516,11 @@ body {
       font-size: 1em; }
 
 .hero {
-  height: 40vh;
+  height: 30vh;
   background: url("../img/hero.png") center no-repeat;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background-size: cover; }
   .hero .hero-content {
     color: #FFFFFF;
     display: flex;
@@ -531,20 +532,35 @@ body {
     padding: 10px;
     font-size: .8em;
     padding-top: 55px;
-    font-family: "Raleway", sans-serif;
-    position: relative; }
+    font-family: "Raleway", sans-serif; }
     .hero .hero-content h2 {
       margin-top: 15px; }
     .hero .hero-content #hero-btn {
-      position: absolute;
-      top: 55%;
-      left: 32%;
+      align-self: center;
+      justify-content: flex-end;
+      margin-top: 50px;
       height: 50px;
       width: 130px;
       background-color: #FFFFFF;
       border-radius: 4px;
       font-size: 1em;
       font-family: "Raleway", sans-serif; }
+
+.gallery-head {
+  margin: 40px;
+  text-align: center; }
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px; }
+  .gallery-container .gallery-item {
+    height: 30vh;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 20px;
+    border: 2px solid black; }
 
 .expand-btn {
   position: relative;

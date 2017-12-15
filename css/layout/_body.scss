@@ -1,8 +1,9 @@
 .hero {
-  height: 40vh;
+  height: 30vh;
   background: url("../img/hero.png") center no-repeat;
   display: flex;
   justify-content: center;
+  background-size: cover;
   .hero-content {
     color: $white;
     display: flex;
@@ -15,14 +16,13 @@
     font-size: .8em;
     padding-top: 55px;
     font-family: $body-font;
-    position: relative;
     h2 {
       margin-top: 15px;
     }
     #hero-btn {
-      position: absolute;
-      top: 55%;
-      left: 32%;
+      align-self: center;
+      justify-content: flex-end;
+      margin-top: 50px;
       height: 50px;
       width: 130px;
       background-color: $white;
@@ -30,5 +30,24 @@
       font-size: 1em;
       font-family: $body-font;
     }
+  }
+}
+
+.gallery-head {
+  margin: 40px;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  .gallery-item {
+    height: 30vh;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 20px;
+    border: 2px solid black;
   }
 }
