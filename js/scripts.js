@@ -1,0 +1,13 @@
+
+
+
+
+//UI
+$(document).ready(function(){
+  $('.expand-btn').click(function(){
+    $('.hidden-menu').toggleClass('menu-show');
+    $('.expand-btn').toggleClass('close-btn');
+
+  });
+
+});

@@ -494,6 +494,9 @@ body {
   position: absolute;
   width: 1px; }
 
+header {
+  position: relative; }
+
 .nav-bar {
   background-color: #4C5760;
   color: #32021F;
@@ -514,6 +517,31 @@ body {
       margin-right: 6px; }
     .nav-bar .logo .name {
       font-size: 1em; }
+
+.hidden-menu {
+  background-color: #000000;
+  opacity: 0.9;
+  height: 108px;
+  width: 100%;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  top: -128px;
+  transition: 1s ease-in-out; }
+  .hidden-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block; }
+    .hidden-menu ul li {
+      border-bottom: 1px solid #FFFFFF;
+      padding-left: 15px;
+      line-height: 35px; }
+
+.menu-show {
+  top: 50px;
+  width: 100%; }
 
 .hero {
   height: 30vh;
@@ -567,7 +595,7 @@ body {
   border-radius: 4px;
   height: 26px;
   width: 26px;
-  margin-right: 5px;
+  margin-right: 15px;
   transition: transform .5s ease; }
 
 .x-btn {
@@ -588,5 +616,8 @@ body {
   left: 3px;
   top: 50%;
   transform: translateY(-50%); }
+
+.close-btn {
+  transform: rotate(45deg); }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,7 +8,7 @@
   border-radius: 4px;
   height: $x-length + ($x-pad * 2);
   width:  $x-length + ($x-pad * 2);
-  margin-right: 5px;
+  margin-right: 15px;
   transition: transform .5s ease;
 }
 
@@ -30,4 +30,7 @@
   left: $x-pad;
   top: 50%;
   transform: translateY(-50%);
+}
+.close-btn {
+  transform: rotate(45deg);
 }
