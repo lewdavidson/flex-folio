@@ -18,11 +18,12 @@ header {
     align-items: center;
     font-family: $logo-font;
     font-weight: bold;
-    #cat {
+     #cat {
       height: 15%;
       width: 13%;
       padding: 5px;
       margin-right: 6px;
+      animation: cat 3s infinite;
     }
     .name{
       font-size: 1em;
@@ -30,6 +31,16 @@ header {
   }
 }
 
+@keyframes cat {
+    from {
+      transform: rotate(-1deg);
+      animation-timing-function: ease-in;
+    }
+    to {
+      transform: rotate(1.5deg);
+      animation-timing-function: ease-out;
+    }
+}
 
 .hidden-menu {
   background-color: $black;
@@ -43,7 +54,6 @@ header {
   top: -$add-height;
   transition: 1s ease-in-out;
   ul {
-    list-style: none;
     margin: 0;
     padding: 0;
     display: block;
@@ -58,29 +68,3 @@ header {
   top: $nav-height;
   width: 100%;
 }
-
-
-
-
-// .hidden-menu {
-//   & .menu-show {
-//     background-color: $black;
-//     opacity: 0.9;
-//     height: $hidden-height;
-//     color: $white;
-//     font-family: $body-font;
-//     font-size: 0.9em;
-//     transition: 5s ease-in-out;
-//     ul {
-//       list-style: none;
-//       margin: 0;
-//       padding: 0;
-//       display: block;
-//       li {
-//         border-bottom: 1px solid $white;
-//         padding-left: 15px;
-//         line-height: 35px;
-//       }
-//     }
-//   }
-// }

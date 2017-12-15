@@ -19,17 +19,6 @@
     h2 {
       margin-top: 15px;
     }
-    #hero-btn {
-      align-self: center;
-      justify-content: flex-end;
-      margin-top: 50px;
-      height: 50px;
-      width: 130px;
-      background-color: $white;
-      border-radius: 4px;
-      font-size: 1em;
-      font-family: $body-font;
-    }
   }
 }
 
@@ -46,9 +35,79 @@
   margin: 20px;
   .gallery-item {
     height: 30vh;
-    max-width: 100%;
+    max-width: 350px;
     object-fit: cover;
     margin: 20px;
     border: 2px solid black;
+    &:nth-child(4n) {
+      width: 370px;
+      object-position: top;
+    }
+  }
+}
+#contact {
+  padding-left: 20px;
+  text-align: center;
+  font-family: $body-font;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 35vh;
+  width: 100%;
+  .info {
+    width: 100%;
+  }
+  ul {
+    line-height: 35px;
+    li {
+      text-align: center;
+    }
+  }
+  #profile {
+    border-radius: 50%;
+    border: 2px solid $black;
+    width: 230px;
+    height: 230px;
+  }
+}
+
+.contact-head {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+  }
+}
+.contact-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  label {
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+  input {
+    border: 2px solid $black;
+    border-radius: 4px;
+    width: 230px;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+  textarea {
+    border: 2px solid $black;
+    border-radius: 4px;
+    margin: 10px;
+  }
+
+  #send {
+
   }
 }

@@ -411,6 +411,9 @@ html {
 h1, h2 {
   margin: 0; }
 
+ul {
+  list-style: none; }
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -514,10 +517,18 @@ header {
       height: 15%;
       width: 13%;
       padding: 5px;
-      margin-right: 6px; }
+      margin-right: 6px;
+      animation: cat 3s infinite; }
     .nav-bar .logo .name {
       font-size: 1em; }
 
+@keyframes cat {
+  from {
+    transform: rotate(-1deg);
+    animation-timing-function: ease-in; }
+  to {
+    transform: rotate(1.5deg);
+    animation-timing-function: ease-out; } }
 .hidden-menu {
   background-color: #000000;
   opacity: 0.9;
@@ -530,7 +541,6 @@ header {
   top: -128px;
   transition: 1s ease-in-out; }
   .hidden-menu ul {
-    list-style: none;
     margin: 0;
     padding: 0;
     display: block; }
@@ -563,16 +573,6 @@ header {
     font-family: "Raleway", sans-serif; }
     .hero .hero-content h2 {
       margin-top: 15px; }
-    .hero .hero-content #hero-btn {
-      align-self: center;
-      justify-content: flex-end;
-      margin-top: 50px;
-      height: 50px;
-      width: 130px;
-      background-color: #FFFFFF;
-      border-radius: 4px;
-      font-size: 1em;
-      font-family: "Raleway", sans-serif; }
 
 .gallery-head {
   margin: 40px;
@@ -585,10 +585,65 @@ header {
   margin: 20px; }
   .gallery-container .gallery-item {
     height: 30vh;
-    max-width: 100%;
+    max-width: 350px;
     object-fit: cover;
     margin: 20px;
     border: 2px solid black; }
+    .gallery-container .gallery-item:nth-child(4n) {
+      width: 370px;
+      object-position: top; }
+
+#contact {
+  padding-left: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif; }
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 35vh;
+  width: 100%; }
+  .about-container .info {
+    width: 100%; }
+  .about-container ul {
+    line-height: 35px; }
+    .about-container ul li {
+      text-align: center; }
+  .about-container #profile {
+    border-radius: 50%;
+    border: 2px solid #000000;
+    width: 230px;
+    height: 230px; }
+
+.contact-head {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+  .contact-head img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px; }
+
+.contact-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .contact-body label {
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-left: 10px; }
+  .contact-body input {
+    border: 2px solid #000000;
+    border-radius: 4px;
+    width: 230px;
+    margin: 5px;
+    margin-bottom: 10px; }
+  .contact-body textarea {
+    border: 2px solid #000000;
+    border-radius: 4px;
+    margin: 10px; }
 
 .expand-btn {
   position: relative;
@@ -619,5 +674,16 @@ header {
 
 .close-btn {
   transform: rotate(45deg); }
+
+#hero-btn {
+  align-self: center;
+  justify-content: flex-end;
+  margin-top: 50px;
+  height: 44px;
+  width: 120px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

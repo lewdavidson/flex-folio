@@ -34,3 +34,15 @@
 .close-btn {
   transform: rotate(45deg);
 }
+ //HERO BTN
+ #hero-btn {
+   align-self: center;
+   justify-content: flex-end;
+   margin-top: 50px;
+   height: 44px;
+   width: 120px;
+   background-color: $white;
+   border-radius: 4px;
+   font-size: 1em;
+   font-family: $body-font;
+ }
