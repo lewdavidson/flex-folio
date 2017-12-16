@@ -7,6 +7,7 @@
   justify-content: center;
   background-size: cover;
   .hero-content {
+    justify-content: center;
     align-items: center;
     color: lighten($grey, 20%);
     display: flex;
@@ -110,6 +111,9 @@
     margin-right: 5px;
     margin-bottom: 10px;
   }
+  #textbox {
+    margin-left: 40px;
+  }
   textarea {
     border: 2px solid $black;
     border-radius: 4px;
@@ -149,8 +153,13 @@
     line-height: 40px;
     font-size: .9em;
     }
+    #hero-btn {
+      font-size: .8em !important;
+      margin-top: 35px;
+      height: 35px;
+      width: 100px;
+    }
   }
-
   .gallery-container .gallery-item:nth-child(4n) {
     width: 303px;
     object-position: top;
@@ -172,6 +181,46 @@
     }
     .sent {
       right: 69%;
+    }
+  }
+}
+
+@media screen and (min-width: $large) {
+  .nav-bar {
+    height: 50px;
+  }
+  .menu-show {
+    top: 50px;
+  }
+  .gallery-container .gallery-item {
+    width: 280px;
+  }
+  .about-container {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: $xlarge) {
+  .gallery-container .gallery-item {
+    max-width: 350px;
+  }
+  .about-container {
+    height: 40vh;
+    line-height: 23px !important;
+    padding: 0;
+  }
+  .send-animation {
+    #clicky {
+    font-size: 1.1em;
+    top: 13%;
+    right: 40%;
+    }
+    .send {
+      right: 37%;
+      transition: right .45s ease;
+    }
+    .sent {
+      right: 62%;
     }
   }
 }

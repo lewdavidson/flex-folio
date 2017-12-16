@@ -567,6 +567,7 @@ header {
   justify-content: center;
   background-size: cover; }
   .hero .hero-content {
+    justify-content: center;
     align-items: center;
     color: #7b8a97;
     display: flex;
@@ -654,6 +655,8 @@ header {
     margin: 5px;
     margin-right: 5px;
     margin-bottom: 10px; }
+  .contact-body #textbox {
+    margin-left: 40px; }
   .contact-body textarea {
     border: 2px solid #000000;
     border-radius: 4px;
@@ -684,6 +687,11 @@ header {
   .hero .hero-content {
     line-height: 40px;
     font-size: .9em; }
+  .hero #hero-btn {
+    font-size: .8em !important;
+    margin-top: 35px;
+    height: 35px;
+    width: 100px; }
 
   .gallery-container .gallery-item:nth-child(4n) {
     width: 303px;
@@ -701,6 +709,36 @@ header {
     transition: right .45s ease; }
   .send-animation .sent {
     right: 69%; } }
+@media screen and (min-width: 1024px) {
+  .nav-bar {
+    height: 50px; }
+
+  .menu-show {
+    top: 50px; }
+
+  .gallery-container .gallery-item {
+    width: 280px; }
+
+  .about-container {
+    height: 50vh; } }
+@media screen and (min-width: 1342px) {
+  .gallery-container .gallery-item {
+    max-width: 350px; }
+
+  .about-container {
+    height: 40vh;
+    line-height: 23px !important;
+    padding: 0; }
+
+  .send-animation #clicky {
+    font-size: 1.1em;
+    top: 13%;
+    right: 40%; }
+  .send-animation .send {
+    right: 37%;
+    transition: right .45s ease; }
+  .send-animation .sent {
+    right: 62%; } }
 .expand-btn {
   margin-right: 10px;
   position: relative;
@@ -744,12 +782,5 @@ header {
   border: 1px solid #0A100D;
   font-size: 1em;
   font-family: "Raleway", sans-serif; }
-
-@media screen and (min-width: 768px) {
-  #hero-btn {
-    margin-top: 35px;
-    height: 35px;
-    width: 100px;
-    font-size: 1.3em; } }
 
 /*# sourceMappingURL=main.css.map */
