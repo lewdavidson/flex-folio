@@ -49,3 +49,12 @@
    font-size: 1em;
    font-family: $body-font;
  }
+
+ @media screen and (min-width: $medium) {
+   #hero-btn {
+     margin-top: 35px;
+     height: 35px;
+     width: 100px;
+     font-size: 1.3em;
+   }
+ }

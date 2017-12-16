@@ -7,11 +7,11 @@
   justify-content: center;
   background-size: cover;
   .hero-content {
+    align-items: center;
     color: lighten($grey, 20%);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -128,6 +128,9 @@
     top: 27%;
     font-size: 13px;
   }
+  .no-click {
+    display: none;
+  }
   .send {
     position: absolute;
     height: 50px;
@@ -137,5 +140,38 @@
   }
   .sent {
     right: 80%;
+  }
+}
+
+@media screen and (min-width: $medium) {
+  .hero {
+    .hero-content {
+    line-height: 40px;
+    font-size: .9em;
+    }
+  }
+
+  .gallery-container .gallery-item:nth-child(4n) {
+    width: 303px;
+    object-position: top;
+  }
+
+  .about-container {
+    height: 45vh;
+  }
+
+  .send-animation {
+    #clicky {
+    font-size: 1.1em;
+    top: 13%;
+    right: 38%;
+    }
+    .send {
+      right: 30%;
+      transition: right .45s ease;
+    }
+    .sent {
+      right: 69%;
+    }
   }
 }

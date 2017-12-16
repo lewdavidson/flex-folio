@@ -11,6 +11,7 @@ $(document).ready(function(){
 
   $('.send-animation').click(function(){
       $('.send').toggleClass('sent');
+      $('#clicky').toggleClass('no-click');
   });
 
 });
