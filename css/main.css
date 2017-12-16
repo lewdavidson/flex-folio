@@ -719,11 +719,17 @@ header {
   .gallery-container .gallery-item {
     width: 280px; }
 
+  .gallery-container .gallery-item:nth-child(4n) {
+    width: 287px; }
+
   .about-container {
     height: 50vh; } }
 @media screen and (min-width: 1342px) {
   .gallery-container .gallery-item {
     max-width: 350px; }
+
+  .gallery-container .gallery-item:nth-child(4n) {
+    width: 287px; }
 
   .about-container {
     height: 40vh;
